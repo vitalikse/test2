@@ -31,6 +31,7 @@ def test_search_city(driver):
     # driver.find_element(By.CSS_SELECTOR, '.grid-container.grid-4-5 h2')
     assert expected_city == displayed_city.text
 #ererer
+print('ffffff')
 
 
 # def test_open_page():
