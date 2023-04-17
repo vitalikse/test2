@@ -16,7 +16,7 @@ def test_check_title(driver):
     assert driver.title == 'Сurrent weather and forecast - OpenWeatherMap'
 
 def test_search_city(driver):
-    driver.get('https://openweathermap.org/')
+    driver.get('https://openweathermap.org')
     search_field = driver.find_element(By.CSS_SELECTOR, "input[placeholder='Search city']")
     search_field.send_keys('New York')
     time.sleep(5)
@@ -30,7 +30,7 @@ def test_search_city(driver):
     displayed_city = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.grid-container.grid-4-5 h2')))
     # driver.find_element(By.CSS_SELECTOR, '.grid-container.grid-4-5 h2')
     assert expected_city == displayed_city.text
-
+#ererer
 
 
 # def test_open_page():
